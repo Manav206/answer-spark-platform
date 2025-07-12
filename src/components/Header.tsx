@@ -94,7 +94,7 @@ export const Header = () => {
             <MessageSquarePlus className="h-5 w-5 text-primary-foreground" />
           </div>
           <span className="font-bold text-xl bg-gradient-primary bg-clip-text text-transparent">
-            AnswerSpark
+            StackIt
           </span>
         </Link>
 
