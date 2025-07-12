@@ -53,6 +53,13 @@ export type Database = {
             referencedRelation: "questions"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "fk_answers_user_id"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
         ]
       }
       notifications: {
@@ -219,6 +226,13 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "answers"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "fk_questions_user_id"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
           },
         ]
       }
